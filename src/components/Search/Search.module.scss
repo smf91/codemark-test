@@ -1,0 +1,36 @@
+.searchBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    button {
+        background-color: blue;
+        border-radius: 4px;
+        height: 2vw;
+        width: 100px;
+        color: #ffff;
+        font-size: 1.1vw;
+    }
+    .formBlock {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            border: 1px solid black;
+            height: 2vw;
+            border-radius: 4px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        button {
+            margin-left: 10px;
+        }
+    }
+    .buttonBlock {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0 10px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.catalogBlock{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    .imgItem{
+        position: relative;
+        padding:  0 0 80% 0 ;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+    .itemGroup{
+        overflow: auto;
+        margin-top: 10px;
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        .tagNamae{
+            background-color: palegoldenrod;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgItem{
+            margin-right: 3px;
+            position: relative;
+            padding: 70% 0 0 0;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
