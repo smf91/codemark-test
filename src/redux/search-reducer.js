@@ -41,7 +41,8 @@ export const tooleIsGrouping = () => ({ type: TOOGLE_IS_GROUPING })
 export const getMeImg = (tag) => {
     let API_KEY = 'HQoiB7tZcHFuvYTruWYgEAi03VKPtg11'
     return async (dispatch) => {
-        let response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${tag}`)
+        debugger
+        let response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${tag.search}`)
         if (response.ok) {
             let json = await response.json()
             dispatch(reset('search'))
